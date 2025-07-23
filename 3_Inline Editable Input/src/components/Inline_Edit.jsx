@@ -24,6 +24,7 @@ const Inline_Edit = () => {
         setCurrentEditedValue(text);
     }
 
+    // When we click outside of the input it will save the changes
     const handleBlur = () => {
         if (currentEditedId !== null) {
             saveChanges();
